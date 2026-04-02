@@ -1,7 +1,7 @@
-title: "Umair's Portfolio"
+title: "Muhammad Umair"
 author: "Muhammad Umair"
-description: "My blog"
-permalink: /:title/
+description: "Computer Engineering journey portfolio"
+permalink: /blog/:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
@@ -9,7 +9,7 @@ date_format: "%B %d, %Y"
 # Layout
 
 show_excerpts: true             # show article excerpts instead of archive list on the home page
-show_frame: true                # display a grey frame on large screens
+show_frame: false               # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
 show_minimal: false             # remove all clutter
 
@@ -19,12 +19,13 @@ show_minimal: false             # remove all clutter
 
 navigation:
   - {file: "index.md", title: "Home", sidebaricon: home}
-  - {file: "blog.md", title: "Blog", sidebaricon: address-card} 
+  - {file: "about.md", title: "About", sidebaricon: user}
+  - {file: "contact.md", title: "Contact", sidebaricon: envelope}
+  - {file: "blog.md", title: "Journey", sidebaricon: book-open}
   
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:2025bscpe134@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/umair93905"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com

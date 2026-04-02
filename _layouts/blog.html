@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="page-panel blog-panel">
+  <header class="page-heading">
+    <p class="eyebrow">{{ page.subtitle | default: "My Personal Experiences" }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="section-copy">Every post below opens as a complete story from my Computer Engineering journey.</p>
+  </header>
+
+  <div class="post-list">
+    {% for post in site.posts %}
+    <article class="post-card">
+      <p class="post-card-meta">{{ post.date | date: site.date_format }}</p>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+      <a class="text-link" href="{{ post.url | relative_url }}">Read full post</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

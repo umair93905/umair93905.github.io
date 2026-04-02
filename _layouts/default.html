@@ -3,21 +3,30 @@
 
 {% include head.html %}
 
-<header class="hover smooth">
-  {% unless site.show_minimal and site.navigation and site.external %}
-    <h1 {% if site.navigation and site.external %}class="full"{% endif %}><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-  {% endunless %}
-  {% include menu.html menu=site.navigation %}
-  {% include menu.html menu=site.external %}
-</header>
+<body class="{{ page.page_class | default: page.title | slugify | default: 'site' }}">
+  <div class="site-orb site-orb-one"></div>
+  <div class="site-orb site-orb-two"></div>
+  <div class="site-grid"></div>
 
-{{ content }}
+  <header class="site-header smooth">
+    <a class="site-brand" href="{{ "/" | relative_url }}">
+      <span class="brand-mark">MU</span>
+      <span class="brand-copy">
+        <strong>{{ site.title | escape }}</strong>
+        <span>Computer Engineering Portfolio</span>
+      </span>
+    </a>
+    {% include menu.html menu=site.navigation %}
+  </header>
 
-{%- if site.footer -%}
-<footer class="hover">
-  <div>{{ site.description }}</div>
-  {% include menu.html menu=site.footer %}
-</footer>
-{%- endif -%}
+  <main class="site-shell">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer smooth">
+    <p>{{ site.description }}</p>
+    {% include menu.html menu=site.external %}
+  </footer>
+</body>
 
 </html>
