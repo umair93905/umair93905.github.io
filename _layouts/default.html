@@ -3,7 +3,7 @@
 
 {% include head.html %}
 
-<body class="{{ page.page_class | default: page.title | slugify | default: 'site' }}">
+<body class="{{ page.page_class | default: page.title | slugify | default: 'site' }}" data-articles-url="{{ "/articles.json" | relative_url }}">
   <div class="site-orb site-orb-one"></div>
   <div class="site-orb site-orb-two"></div>
   <div class="site-grid"></div>
@@ -24,9 +24,13 @@
   </main>
 
   <footer class="site-footer smooth">
-    <p>{{ site.description }}</p>
+    <div class="footer-copy">
+      <p>{{ site.description }}</p>
+      <small>{{ "now" | date: "%Y" }} • Built for lightweight weekly article updates.</small>
+    </div>
     {% include menu.html menu=site.external %}
   </footer>
+  <script src="{{ "/assets/js/site.js" | relative_url }}" defer></script>
 </body>
 
 </html>

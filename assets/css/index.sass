@@ -4,65 +4,91 @@
 @import utils, basic, layout, classes, rouge_github
 
 \:root
-  --bg: #f3efe6
-  --paper: rgba(255, 251, 245, 0.78)
-  --paper-strong: rgba(255, 250, 244, 0.96)
-  --text: #201714
-  --muted: #66554d
-  --line: rgba(89, 67, 55, 0.14)
-  --accent: #155e63
-  --accent-soft: #d5eceb
-  --warm: #ad6a3d
-  --shadow: 0 24px 80px rgba(38, 22, 14, 0.12)
+  --bg: #050816
+  --bg-elevated: rgba(11, 20, 39, 0.88)
+  --panel: rgba(12, 23, 45, 0.76)
+  --panel-strong: rgba(17, 30, 56, 0.92)
+  --panel-soft: rgba(10, 18, 33, 0.72)
+  --text: #ecf2ff
+  --muted: #97a7cb
+  --line: rgba(151, 167, 203, 0.16)
+  --line-strong: rgba(135, 173, 255, 0.28)
+  --accent: #6dd3ff
+  --accent-strong: #7c5cff
+  --accent-soft: rgba(109, 211, 255, 0.14)
+  --warm: #ffb86c
+  --shadow: 0 24px 90px rgba(1, 8, 22, 0.45)
+  --content-width: min(1180px, calc(100vw - 2rem))
 
 body
   font-family: "Source Serif 4", serif
-  background: radial-gradient(circle at top left, rgba(21, 94, 99, 0.15), transparent 30%), radial-gradient(circle at right 15%, rgba(173, 106, 61, 0.14), transparent 20%), linear-gradient(180deg, #f7f1e8 0%, #efe4d6 100%)
   color: var(--text)
+  background: radial-gradient(circle at top left, rgba(124, 92, 255, 0.22), transparent 25%), radial-gradient(circle at top right, rgba(109, 211, 255, 0.18), transparent 24%), linear-gradient(180deg, #040813 0%, #08111f 38%, #040814 100%)
   overflow-x: hidden
+  min-height: 100vh
 
 body > *
   padding: 0
   box-shadow: none
 
-h1, h2, h3, .site-brand, nav, .button-link, .fact-number, .eyebrow
+body:not(.page-ready) .reveal
+  opacity: 0
+  transform: translateY(20px)
+
+body.page-ready .reveal
+  opacity: 1
+  transform: translateY(0)
+  transition: opacity .7s ease, transform .7s ease
+
+h1, h2, h3, h4, .site-brand, nav, .button-link, .fact-number, .eyebrow
   font-family: "Space Grotesk", sans-serif
 
 a
   color: var(--accent)
 
+a:hover
+  color: #c2e8ff
+
+body::before
+  content: ""
+  position: fixed
+  inset: 0
+  background: linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px)
+  background-size: 42px 42px
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55), transparent 92%)
+  pointer-events: none
+  z-index: -4
+
 .site-grid
   position: fixed
   inset: 0
-  background-image: linear-gradient(rgba(21, 94, 99, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(21, 94, 99, 0.05) 1px, transparent 1px)
-  background-size: 48px 48px
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.36), transparent 85%)
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.02), transparent 60%)
   pointer-events: none
   z-index: -3
 
 .site-orb
   position: fixed
   border-radius: 999px
-  filter: blur(18px)
+  filter: blur(32px)
   pointer-events: none
   z-index: -2
 
 .site-orb-one
-  width: 22rem
-  height: 22rem
-  background: rgba(21, 94, 99, 0.16)
-  top: 3rem
+  width: 24rem
+  height: 24rem
+  top: -2rem
   right: -4rem
+  background: rgba(124, 92, 255, 0.28)
 
 .site-orb-two
-  width: 18rem
-  height: 18rem
-  background: rgba(173, 106, 61, 0.18)
-  left: -5rem
-  bottom: 5rem
+  width: 20rem
+  height: 20rem
+  left: -6rem
+  bottom: 6rem
+  background: rgba(109, 211, 255, 0.18)
 
 .site-header, .site-shell, .site-footer
-  width: min(1120px, calc(100vw - 2rem))
+  width: var(--content-width)
   margin: 0 auto
 
 .site-header
@@ -75,10 +101,10 @@ a
   gap: 1rem
   margin-top: 1rem
   padding: 1rem 1.25rem
-  background: rgba(255, 251, 245, 0.78)
+  background: rgba(8, 17, 31, 0.72)
   border: 1px solid var(--line)
   border-radius: 24px
-  backdrop-filter: blur(18px)
+  backdrop-filter: blur(16px)
   box-shadow: var(--shadow)
 
 .site-brand
@@ -91,17 +117,18 @@ a
 .brand-mark
   display: grid
   place-items: center
-  width: 3rem
-  height: 3rem
+  width: 3.15rem
+  height: 3.15rem
   border-radius: 18px
-  background: linear-gradient(135deg, var(--accent), #0d3f43)
-  color: #fff7f2
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent))
+  color: #fff
+  box-shadow: 0 18px 36px rgba(124, 92, 255, 0.32)
   font-weight: 700
 
 .brand-copy
   display: flex
   flex-direction: column
-  line-height: 1.1
+  line-height: 1.08
   span
     font-family: "Source Serif 4", serif
     color: var(--muted)
@@ -110,211 +137,339 @@ a
 header nav, footer nav
   display: flex
   flex-wrap: wrap
-  gap: .5rem
+  gap: .55rem
   margin: 0
   a
     margin: 0
+    padding: .8rem 1.05rem
     text-decoration: none
+    border: 1px solid transparent
     border-radius: 999px
-    padding: .7rem 1rem
     box-shadow: none
+    color: var(--muted)
+    transition: background .3s ease, color .3s ease, border-color .3s ease, transform .3s ease
   a.active, a:hover
+    color: var(--text)
     background: var(--accent-soft)
-    color: var(--accent)
+    border-color: var(--line-strong)
+    transform: translateY(-1px)
 
 .site-shell
   padding: 2rem 0 3rem
 
-.page-panel
-  background: var(--paper)
+.page-panel, .section-panel
+  background: linear-gradient(180deg, rgba(13, 24, 44, 0.94), rgba(8, 15, 29, 0.88))
   border: 1px solid var(--line)
-  border-radius: 36px
-  padding: clamp(1.4rem, 2vw, 2rem)
-  backdrop-filter: blur(16px)
+  border-radius: 32px
   box-shadow: var(--shadow)
 
+.page-panel
+  padding: clamp(1.35rem, 2vw, 2rem)
+
+.section-panel
+  margin-top: 1rem
+  padding: clamp(1.25rem, 2vw, 1.8rem)
+
 .page-heading
-  margin-bottom: 1.5rem
+  margin-bottom: 1.8rem
   h1
-    font-size: clamp(2.2rem, 5vw, 4rem)
     margin: 0
+    font-size: clamp(2.4rem, 5vw, 4.2rem)
+    line-height: .95
 
 .eyebrow
-  margin: 0 0 .6rem
+  margin: 0 0 .65rem
   color: var(--warm)
-  font-size: .82rem
-  letter-spacing: .14em
   text-transform: uppercase
+  letter-spacing: .14em
+  font-size: .82rem
 
-.section-copy
-  max-width: 42rem
+.section-copy, .lead, .spotlight-card p, .timeline-card p, .detail-card p, .contact-card p, .post-panel p, .footer-copy small
   color: var(--muted)
-  font-size: 1.05rem
-
-.hero-grid
-  display: grid
-  grid-template-columns: 1.35fr .95fr
-  gap: 1.25rem
-
-.hero-card, .spotlight-card, .detail-card, .contact-card, .post-card, .timeline-card
-  background: var(--paper-strong)
-  border: 1px solid var(--line)
-  border-radius: 28px
-  padding: 1.4rem
-
-.hero-intro
-  min-height: 25rem
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  background: linear-gradient(135deg, rgba(255, 251, 245, 0.96), rgba(213, 236, 235, 0.84))
-
-.hero-intro h1
-  font-size: clamp(2.8rem, 7vw, 5.6rem)
-  line-height: .95
-  margin: 0 0 1rem
 
 .lead
   max-width: 42rem
-  color: var(--muted)
   font-size: 1.08rem
+  line-height: 1.8
+
+.hero-grid
+  display: grid
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, .95fr)
+  gap: 1rem
+
+.hero-card, .spotlight-card, .detail-card, .contact-card, .timeline-card, .stat-card, .article-card
+  background: linear-gradient(180deg, rgba(17, 30, 56, 0.95), rgba(10, 19, 36, 0.92))
+  border: 1px solid var(--line)
+  border-radius: 28px
+  padding: 1.35rem
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03)
+
+.hero-intro
+  min-height: 31rem
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  background: linear-gradient(145deg, rgba(21, 35, 68, 0.96), rgba(10, 17, 33, 0.92))
+  overflow: hidden
+
+.hero-intro h1
+  margin: 0
+  max-width: 13ch
+  font-size: clamp(2.9rem, 6.6vw, 5.4rem)
+  line-height: .94
+  letter-spacing: -.04em
 
 .button-row
   display: flex
   flex-wrap: wrap
-  gap: .9rem
-  margin-top: 1.2rem
+  gap: .85rem
+  margin-top: 1.4rem
 
 .button-link
   display: inline-flex
   align-items: center
-  gap: .5rem
+  justify-content: center
+  gap: .45rem
+  padding: .9rem 1.2rem
+  border: 1px solid transparent
   border-radius: 999px
-  padding: .85rem 1.2rem
-  text-decoration: none
-  box-shadow: none
-
-.button-link.primary
-  background: var(--accent)
-  color: #fff
-
-.button-link.secondary
   background: transparent
   color: var(--text)
-  border: 1px solid var(--line)
+  font-weight: 600
+  text-decoration: none
+  cursor: pointer
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease, background .3s ease, color .3s ease
+
+.button-link:hover
+  transform: translateY(-2px)
+
+.button-link.primary
+  background: linear-gradient(135deg, var(--accent-strong), var(--accent))
+  color: #fff
+  box-shadow: 0 18px 34px rgba(124, 92, 255, 0.28)
+
+.button-link.primary:hover
+  box-shadow: 0 24px 44px rgba(124, 92, 255, 0.38)
+
+.button-link.secondary
+  border-color: var(--line-strong)
+  background: rgba(255, 255, 255, 0.02)
+  color: var(--text)
+
+.button-link.secondary:hover
+  background: rgba(255, 255, 255, 0.05)
 
 .fact-grid
   display: grid
   grid-template-columns: repeat(2, minmax(0, 1fr))
-  gap: .8rem
-  margin-top: 1.3rem
+  gap: .85rem
+  margin-top: 1.4rem
+
+.stat-card
+  min-height: 7rem
 
 .fact-number
   display: block
-  font-size: 1.65rem
-  font-weight: 700
+  margin-bottom: .55rem
+  font-size: clamp(1.8rem, 4vw, 2.4rem)
+  line-height: 1
+  color: var(--text)
 
 .fact-label
   color: var(--muted)
-  font-size: .95rem
+  font-size: .96rem
 
 .hero-side
   display: grid
   gap: 1rem
 
+.spotlight-card h2, .section-panel h2, .blog-panel h2
+  margin-top: 0
+
 .mini-list
   display: grid
-  gap: .85rem
+  gap: .8rem
   margin-top: 1rem
 
 .mini-list div
-  padding-bottom: .85rem
+  padding-bottom: .8rem
   border-bottom: 1px solid var(--line)
+  color: var(--muted)
   &:last-child
-    padding-bottom: 0
     border-bottom: 0
+    padding-bottom: 0
 
-.spotlight-grid, .details-grid, .contact-grid, .post-list
+.section-bar, .articles-toolbar
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  gap: 1rem
+  flex-wrap: wrap
+  margin-bottom: 1rem
+
+.articles-grid, .details-grid, .contact-grid, .timeline-strip
   display: grid
   grid-template-columns: repeat(3, minmax(0, 1fr))
   gap: 1rem
-  margin-top: 1rem
 
-.timeline-strip
-  display: grid
-  grid-template-columns: repeat(3, minmax(0, 1fr))
-  gap: 1rem
-  margin-top: 1rem
+.articles-grid-wide
+  grid-template-columns: repeat(2, minmax(0, 1fr))
 
-.timeline-card span, .post-card-meta
+.article-card
+  position: relative
+  display: flex
+  flex-direction: column
+  min-height: 16.5rem
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease, background .35s ease
+  animation: card-rise .6s ease forwards
+  animation-delay: calc(var(--card-index, 0) * .06s)
+  opacity: 0
+
+.article-card:hover
+  transform: translateY(-6px)
+  border-color: var(--line-strong)
+  box-shadow: 0 22px 42px rgba(2, 8, 22, 0.35)
+  background: linear-gradient(180deg, rgba(22, 38, 71, 0.98), rgba(10, 18, 35, 0.96))
+
+.article-card__meta
+  margin: 0 0 .9rem
   color: var(--warm)
   font-family: "Space Grotesk", sans-serif
   font-size: .85rem
+  letter-spacing: .03em
 
-.detail-card ul
-  padding-left: 1.1rem
+.article-card__title
+  margin: 0 0 .85rem
+  font-size: 1.28rem
+  line-height: 1.2
+  a
+    text-decoration: none
+    color: var(--text)
+    box-shadow: none
 
-.detail-card li
-  margin: .45rem 0
+.article-card__description
+  margin: 0
+  color: var(--muted)
+  line-height: 1.75
 
-.contact-card a, .post-card a, .timeline-card a
+.article-card__link
+  margin-top: auto
+  padding-top: 1.25rem
+  font-family: "Space Grotesk", sans-serif
+  font-weight: 700
   text-decoration: none
   box-shadow: none
 
-.contact-note
-  margin-top: 1.5rem
-  padding: 1.2rem 1.3rem
-  border-left: 4px solid var(--warm)
-  background: rgba(173, 106, 61, 0.08)
-  border-radius: 18px
+.articles-actions
+  display: flex
+  justify-content: center
+  margin-top: 1.25rem
 
-.blog-panel
-  display: grid
-  gap: 1rem
+.load-more-button[hidden]
+  display: none
 
-.post-card h2
-  margin-top: .4rem
+.empty-state, .noscript-note
+  padding: 1rem 1.2rem
+  border-radius: 20px
+  background: rgba(255, 255, 255, 0.04)
+  color: var(--muted)
 
-.text-link
+.timeline-card span
+  color: var(--warm)
   font-family: "Space Grotesk", sans-serif
-  font-weight: 600
+  font-size: .84rem
+  letter-spacing: .04em
+  text-transform: uppercase
+
+.timeline-card h3
+  margin-top: .65rem
+
+.detail-card ul
+  margin: 0
+  padding-left: 1.2rem
+
+.detail-card li
+  margin: .45rem 0
+  color: var(--muted)
+
+.contact-note
+  margin-top: 1rem
+  padding: 1.2rem 1.35rem
+  border: 1px solid rgba(255, 184, 108, 0.24)
+  border-left: 4px solid var(--warm)
+  border-radius: 22px
+  background: rgba(255, 184, 108, 0.08)
+  color: var(--text)
 
 .post-panel
-  max-width: 52rem
+  max-width: 56rem
   margin: 0 auto
 
 .post-hero
-  margin-bottom: 1.4rem
+  margin-bottom: 1.6rem
   h1
-    font-size: clamp(2.4rem, 5vw, 4rem)
-    line-height: 1
-    margin: 0 0 .8rem
+    margin: 0 0 .85rem
+    font-size: clamp(2.4rem, 5vw, 4.3rem)
+    line-height: .98
   time
     color: var(--muted)
 
 .back-link
-  display: inline-block
+  display: inline-flex
+  align-items: center
+  gap: .45rem
   margin-bottom: 1.2rem
+  color: var(--accent)
   text-decoration: none
   box-shadow: none
 
 .site-footer
   display: flex
-  justify-content: space-between
   align-items: center
+  justify-content: space-between
   gap: 1rem
   margin-bottom: 2rem
-  padding: 1.1rem 1.25rem
-  background: rgba(255, 251, 245, 0.74)
+  padding: 1rem 1.25rem
+  background: rgba(8, 17, 31, 0.72)
   border: 1px solid var(--line)
   border-radius: 24px
   backdrop-filter: blur(16px)
-  p
+
+.footer-copy
+  display: flex
+  flex-direction: column
+  gap: .2rem
+  p, small
     margin: 0
-    color: var(--muted)
+
+.site-footer nav a
+  padding: .72rem
+
+code:not(pre code)
+  background: rgba(255, 255, 255, 0.08)
+  color: #dff3ff
+
+pre
+  background: rgba(0, 0, 0, 0.35)
+
+blockquote
+  background: rgba(255, 255, 255, 0.04)
+  border-left-color: var(--accent)
+  color: var(--muted)
+
+img
+  border: 1px solid var(--line)
+
+@keyframes card-rise
+  from
+    opacity: 0
+    transform: translateY(18px)
+  to
+    opacity: 1
+    transform: translateY(0)
 
 @media (max-width: 980px)
-  .hero-grid, .spotlight-grid, .details-grid, .contact-grid, .timeline-strip, .post-list
+  .hero-grid, .articles-grid, .articles-grid-wide, .details-grid, .contact-grid, .timeline-strip
     grid-template-columns: 1fr
 
 @media (max-width: 760px)
@@ -325,7 +480,16 @@ header nav, footer nav
   .site-footer
     flex-direction: column
     align-items: flex-start
+  .page-panel, .section-panel
+    border-radius: 24px
+  .hero-intro
+    min-height: auto
+  .hero-intro h1
+    font-size: clamp(2.4rem, 13vw, 4rem)
   .fact-grid
     grid-template-columns: 1fr
-  .hero-intro h1
-    font-size: clamp(2.4rem, 14vw, 4rem)
+  header nav, footer nav
+    width: 100%
+  header nav a
+    flex: 1 1 auto
+    text-align: center

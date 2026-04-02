@@ -4,60 +4,85 @@ title: Home
 page_class: home-page
 ---
 
-<section class="hero-grid">
+<!-- Weekly update note: add a new markdown post in `_posts` and the article feed,
+count, and latest-articles section update automatically. -->
+
+<section class="hero-grid reveal">
   <div class="hero-card hero-intro">
-    <div>
+    <div class="hero-copy">
       <p class="eyebrow">Computer Engineering Portfolio</p>
-      <h1>Muhammad<br>Umair</h1>
-      <p class="lead">I am a Computer Engineering student at UET Faisalabad, building my future through discipline, curiosity, and steady growth. This portfolio presents my academic journey, university experiences, and the lessons that shaped me into a more focused learner.</p>
+      <h1>Designing my future through engineering, code, and weekly reflection.</h1>
+      <p class="lead">I am Muhammad Umair, a Computer Engineering student at UET Faisalabad. This portfolio shares my journey, my growth, and a dynamic stream of articles that I can keep updating week after week.</p>
       <div class="button-row">
-        <a class="button-link primary" href="/blog/">Read My Journey</a>
-        <a class="button-link secondary" href="/about/">About Me</a>
+        <a class="button-link primary" href="{{ "/blog/" | relative_url }}">Explore Articles</a>
+        <a class="button-link secondary" href="{{ "/about/" | relative_url }}">About Me</a>
       </div>
     </div>
 
     <div class="fact-grid">
-      <div class="detail-card">
+      <article class="stat-card">
+        <span class="fact-number" data-article-count>{{ site.posts | size }}</span>
+        <span class="fact-label">Published articles generated from my portfolio feed</span>
+      </article>
+      <article class="stat-card">
         <span class="fact-number">2.94</span>
-        <span class="fact-label">First semester GPA and a strong motivation to improve</span>
-      </div>
-      <div class="detail-card">
-        <span class="fact-number">13</span>
-        <span class="fact-label">Portfolio posts documenting my journey and experiences</span>
-      </div>
-      <div class="detail-card">
+        <span class="fact-label">First-semester GPA and a clear drive to improve</span>
+      </article>
+      <article class="stat-card">
         <span class="fact-number">UET</span>
         <span class="fact-label">Computer Engineering student at Faisalabad campus</span>
-      </div>
-      <div class="detail-card">
-        <span class="fact-number">ICS</span>
-        <span class="fact-label">A major academic shift from Biology toward technology</span>
-      </div>
+      </article>
+      <article class="stat-card">
+        <span class="fact-number">Weekly</span>
+        <span class="fact-label">Ready for regular article updates without editing HTML</span>
+      </article>
     </div>
   </div>
 
   <div class="hero-side">
-    <div class="spotlight-card">
-      <p class="eyebrow">Quick Profile</p>
-      <h2>Focused on growth, coding, and real progress</h2>
+    <article class="spotlight-card">
+      <p class="eyebrow">Current Focus</p>
+      <h2>Learning deeply, writing regularly, improving consistently</h2>
       <div class="mini-list">
         <div><strong>Current Study:</strong> Second semester of Computer Engineering</div>
-        <div><strong>Location:</strong> UET Faisalabad, Pakistan</div>
-        <div><strong>Interests:</strong> Programming, databases, machine learning, and problem solving</div>
+        <div><strong>Interests:</strong> Programming, databases, machine learning, and practical problem solving</div>
+        <div><strong>Goal:</strong> Build a strong technical foundation while documenting each milestone</div>
       </div>
-    </div>
+    </article>
 
-    <div class="spotlight-card">
-      <p class="eyebrow">Portfolio Direction</p>
-      <h2>A professional record of my academic journey</h2>
-      <p>This homepage keeps my fixed personal information visible, while the Journey page opens all blog posts separately in full detail, exactly as required for my portfolio structure.</p>
-    </div>
+    <article class="spotlight-card">
+      <p class="eyebrow">Portfolio System</p>
+      <h2>Now built for dynamic article growth</h2>
+      <p>This updated homepage reads article data automatically, so new posts can appear in the article count and latest section without rewriting the HTML layout every week.</p>
+    </article>
   </div>
 </section>
 
-<section class="page-panel" style="margin-top: 1rem;">
+<section class="section-panel article-showcase reveal" data-articles-module>
+  <div class="section-bar">
+    <div>
+      <p class="eyebrow">Latest Articles</p>
+      <h2>Newest updates from my engineering journey</h2>
+      <p class="section-copy">These cards are powered by a structured article feed. Add a new post, and the latest section updates automatically.</p>
+    </div>
+    <a class="button-link secondary" href="{{ "/blog/" | relative_url }}">Browse All Articles</a>
+  </div>
+
+  <div class="articles-grid" data-articles-list data-limit="3" data-empty-message="New articles will appear here soon.">
+    {% for post in site.posts limit: 3 %}
+    <article class="article-card fallback-card" style="--card-index:{{ forloop.index0 }}">
+      <p class="article-card__meta">{{ post.date | date: site.date_format }}</p>
+      <h3 class="article-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="article-card__description">{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+      <a class="article-card__link" href="{{ post.url | relative_url }}">Read article</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section-panel reveal">
   <p class="eyebrow">Journey Highlights</p>
-  <h2>From uncertainty to engineering</h2>
+  <h2>From uncertainty to a more focused technical path</h2>
   <div class="timeline-strip">
     <article class="timeline-card">
       <span>Early Direction</span>
