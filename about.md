@@ -4,7 +4,7 @@ title: About
 subtitle: "Who I am and what drives me"
 ---
 
-<section class="details-grid reveal">
+<section class="details-grid">
   <article class="detail-card">
     <p class="eyebrow">Background</p>
     <h2>My academic story</h2>
@@ -33,7 +33,7 @@ subtitle: "Who I am and what drives me"
   </article>
 </section>
 
-<section class="section-panel reveal">
+<section class="page-panel" style="margin-top: 1rem;">
   <p class="eyebrow">Current Growth</p>
   <h2>Skills I am developing</h2>
   <div class="spotlight-grid">

@@ -4,7 +4,7 @@ title: Contact
 subtitle: "How to reach me"
 ---
 
-<section class="contact-grid reveal">
+<section class="contact-grid">
   <article class="contact-card">
     <p class="eyebrow">Email</p>
     <h2>Academic Contact</h2>
@@ -27,6 +27,6 @@ subtitle: "How to reach me"
   </article>
 </section>
 
-<div class="contact-note reveal">
+<div class="contact-note">
   I am in the early stage of my engineering journey, but I am committed to improving my academic performance, technical skills, and practical understanding with every semester.
 </div>
