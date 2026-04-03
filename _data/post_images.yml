@@ -1,0 +1,64 @@
+who-i-am:
+  image: "https://images.pexels.com/photos/33327129/pexels-photo-33327129.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A student walking across a university campus on a bright day"
+  source: "https://www.pexels.com/photo/university-campus-scene-with-student-walking-33327129/"
+
+admission-journey-the-beginning:
+  image: "https://images.pexels.com/photos/7972502/pexels-photo-7972502.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Two university students walking beside an academic building"
+  source: "https://www.pexels.com/photo/students-walking-by-an-university-building-7972502/"
+
+first-day-at-university:
+  image: "https://images.pexels.com/photos/7972512/pexels-photo-7972512.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Students walking into a university campus through an archway"
+  source: "https://www.pexels.com/photo/back-view-of-students-walking-in-a-campus-7972512/"
+
+first-class:
+  image: "https://images.pexels.com/photos/8423405/pexels-photo-8423405.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Students sitting together in a bright classroom"
+  source: "https://www.pexels.com/photo/students-on-a-classroom-8423405/"
+
+first-programming-lab-experience:
+  image: "https://images.pexels.com/photos/5483075/pexels-photo-5483075.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Hands typing code on a laptop during a programming session"
+  source: "https://www.pexels.com/photo/coding-on-a-laptop-5483075/"
+
+midterm-experience:
+  image: "https://images.pexels.com/photos/6684150/pexels-photo-6684150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Students taking an exam in a classroom"
+  source: "https://www.pexels.com/photo/students-taking-exam-inside-the-classroom-6684150/"
+
+first-machine-learning-project:
+  image: "https://images.pexels.com/photos/7947996/pexels-photo-7947996.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Laptop screen showing charts and data analysis"
+  source: "https://www.pexels.com/photo/charts-on-a-laptop-7947996/"
+
+final-exams-experience:
+  image: "https://images.pexels.com/photos/6684209/pexels-photo-6684209.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A student writing answers during an exam"
+  source: "https://www.pexels.com/photo/a-person-taking-an-exam-6684209/"
+
+first-semester-result:
+  image: "https://images.pexels.com/photos/7092353/pexels-photo-7092353.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A student receiving a paper in a classroom"
+  source: "https://www.pexels.com/photo/student-getting-his-test-paper-7092353/"
+
+hostel-life-experience:
+  image: "https://images.pexels.com/photos/5137980/pexels-photo-5137980.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A clean hostel room with bunk beds and natural light"
+  source: "https://www.pexels.com/photo/a-room-in-a-hostel-5137980/"
+
+second-semester-oop:
+  image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A programmer working on code on a laptop"
+  source: "https://www.pexels.com/photo/code-coding-computer-data-574071/"
+
+second-semester-oop-and-database:
+  image: "https://images.pexels.com/photos/7988114/pexels-photo-7988114.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A laptop screen showing programming work in progress"
+  source: "https://www.pexels.com/photo/a-person-using-laptop-7988114/"
+
+challenges-of-the-semester-system:
+  image: "https://images.pexels.com/photos/31875851/pexels-photo-31875851.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A focused student taking a classroom test"
+  source: "https://www.pexels.com/photo/focused-student-taking-test-in-classroom-31875851/"

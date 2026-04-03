@@ -3,9 +3,22 @@ layout: default
 ---
 
 <article class="page-panel post-panel">
-  <a class="back-link" href="{{ "/blog/" | relative_url }}">Back to Journey</a>
+  <a class="back-link" href="{{ "/blog/" | relative_url }}">Back to Articles</a>
+  {% assign page_image_data = site.data.post_images[page.slug] %}
+  {% assign page_image = page.image | default: page_image_data.image %}
+  {% assign page_image_alt = page.image_alt | default: page_image_data.alt | default: page.title %}
+  {% if page_image %}
+    {% if page_image contains '://' %}
+      {% assign page_image_url = page_image %}
+    {% else %}
+      {% assign page_image_url = page_image | relative_url %}
+    {% endif %}
+    <figure class="post-cover">
+      <img class="post-cover-image" src="{{ page_image_url }}" alt="{{ page_image_alt }}" decoding="async">
+    </figure>
+  {% endif %}
   <header class="post-hero">
-    <p class="eyebrow">Journey Post</p>
+    <p class="eyebrow">Article</p>
     <h1>{{ page.title }}</h1>
     {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
     {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time>{% endif %}

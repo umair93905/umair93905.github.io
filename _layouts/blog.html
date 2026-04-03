@@ -10,11 +10,26 @@ layout: default
 
   <div class="post-list">
     {% for post in site.posts reversed %}
+    {% assign post_image_data = site.data.post_images[post.slug] %}
+    {% assign card_image = post.image | default: post_image_data.image %}
+    {% assign card_image_alt = post.image_alt | default: post_image_data.alt | default: post.title %}
     <article class="post-card">
+      {% if card_image %}
+        {% if card_image contains '://' %}
+          {% assign card_image_url = card_image %}
+        {% else %}
+          {% assign card_image_url = card_image | relative_url %}
+        {% endif %}
+        <a class="post-card-media" href="{{ post.url | relative_url }}">
+          <img src="{{ card_image_url }}" alt="{{ card_image_alt }}" loading="lazy" decoding="async">
+        </a>
+      {% endif %}
+      <div class="post-card-body">
       <p class="post-card-meta">{{ post.date | date: site.date_format }}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
       <a class="text-link" href="{{ post.url | relative_url }}">Read full article</a>
+      </div>
     </article>
     {% endfor %}
   </div>
