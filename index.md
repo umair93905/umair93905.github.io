@@ -69,22 +69,3 @@ page_class: home-page
     {% endfor %}
   </div>
 </section>
-
-<section class="page-panel section-block">
-  <p class="eyebrow">Article Format</p>
-  <h2>How to add a new article</h2>
-  <div class="spotlight-grid">
-    <article class="spotlight-card">
-      <h3>1. Copy the template</h3>
-      <p>Use the file <code>article-template.md.example</code> as your starting format for each new post.</p>
-    </article>
-    <article class="spotlight-card">
-      <h3>2. Save it in `_posts`</h3>
-      <p>Rename it using the Jekyll format: <code>YYYY-MM-DD-title.md</code>, then place it inside the <code>_posts</code> folder.</p>
-    </article>
-    <article class="spotlight-card">
-      <h3>3. Publish automatically</h3>
-      <p>After pushing to GitHub, the new article will appear automatically in the Articles page and the homepage count will update by itself.</p>
-    </article>
-  </div>
-</section>
