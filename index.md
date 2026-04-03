@@ -9,7 +9,7 @@ page_class: home-page
     <div>
       <p class="eyebrow">Personal Portfolio</p>
       <h1>Muhammad<br>Umair</h1>
-      <p class="lead">Welcome to my personal portfolio. This website is a place where I share who I am, what I am learning, and the articles I continue publishing over time. It is designed so I can keep adding new posts easily without changing the whole website structure.</p>
+      <p class="lead">Welcome to my personal portfolio. This space reflects who I am, what I am learning, and the progress I am making as a Computer Engineering student through my studies, writing, and continuous growth.</p>
       <div class="button-row">
         <a class="button-link primary" href="{{ "/blog/" | relative_url }}">Read Articles</a>
         <a class="button-link secondary" href="{{ "/about/" | relative_url }}">About Me</a>
@@ -48,9 +48,9 @@ page_class: home-page
     </div>
 
     <div class="spotlight-card">
-      <p class="eyebrow">Website Format</p>
-      <h2>Simple structure for adding more articles</h2>
-      <p>This site uses Jekyll posts. Whenever I add a new markdown file inside <code>_posts</code>, it automatically appears on the articles page and updates the article count here on the homepage.</p>
+      <p class="eyebrow">Vision</p>
+      <h2>Learning with purpose and consistency</h2>
+      <p>I want to keep improving my technical knowledge, communication skills, and problem-solving ability while building a strong academic and professional future in Computer Engineering.</p>
     </div>
   </div>
 </section>
