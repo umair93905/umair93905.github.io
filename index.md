@@ -37,10 +37,6 @@ page_class: home-page
   </div>
 
   <div class="hero-side">
-    <div class="spotlight-card hero-photo-card">
-      <img class="hero-photo" src="https://images.pexels.com/photos/33327129/pexels-photo-33327129.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="A university student walking across campus" decoding="async">
-    </div>
-
     <div class="spotlight-card">
       <p class="eyebrow">Profile</p>
       <h2>Basic personal profile</h2>
@@ -56,24 +52,5 @@ page_class: home-page
       <h2>Learning with purpose and consistency</h2>
       <p>I want to keep improving my technical knowledge, communication skills, and problem-solving ability while building a strong academic and professional future in Computer Engineering.</p>
     </div>
-  </div>
-</section>
-
-<section class="page-panel section-block">
-  <p class="eyebrow">Overall</p>
-  <h2>A complete view of my portfolio</h2>
-  <div class="spotlight-grid overall-grid">
-    <article class="spotlight-card">
-      <h3>Academic Journey</h3>
-      <p>My portfolio reflects my journey from school and college to studying Computer Engineering at UET Faisalabad, where I continue to grow through learning and hard work.</p>
-    </article>
-    <article class="spotlight-card">
-      <h3>Skills and Growth</h3>
-      <p>I am building my foundation in programming, problem solving, object-oriented programming, and database concepts while improving my confidence step by step.</p>
-    </article>
-    <article class="spotlight-card">
-      <h3>Future Direction</h3>
-      <p>My goal is to become a skilled engineer with strong technical knowledge, clear communication, and the ability to contribute meaningfully in the technology field.</p>
-    </article>
   </div>
 </section>
