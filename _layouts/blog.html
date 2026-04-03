@@ -4,18 +4,23 @@ layout: default
 
 <section class="page-panel blog-panel">
   <header class="page-heading">
-    <p class="eyebrow">{{ page.subtitle | default: "My Personal Experiences" }}</p>
+    <p class="eyebrow">{{ page.subtitle | default: "Articles and Updates" }}</p>
     <h1>{{ page.title }}</h1>
-    <p class="section-copy">Every post below opens as a complete story from my Computer Engineering journey.</p>
+    <p class="section-copy">Every post below is added automatically from the <code>_posts</code> folder, so this page keeps growing whenever a new article is published.</p>
   </header>
+
+  <div class="blog-summary-card">
+    <strong>{{ site.posts | size }}</strong> total articles
+    <span>Add a new markdown file in <code>_posts</code> and it will appear here automatically.</span>
+  </div>
 
   <div class="post-list">
     {% for post in site.posts %}
     <article class="post-card">
       <p class="post-card-meta">{{ post.date | date: site.date_format }}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
-      <a class="text-link" href="{{ post.url | relative_url }}">Read full post</a>
+      <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+      <a class="text-link" href="{{ post.url | relative_url }}">Read full article</a>
     </article>
     {% endfor %}
   </div>

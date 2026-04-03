@@ -1,20 +1,20 @@
 ---
 layout: page
 title: About
-subtitle: "Who I am and what drives me"
+subtitle: "Who I am and what this portfolio represents"
 ---
 
 <section class="details-grid">
   <article class="detail-card">
     <p class="eyebrow">Background</p>
-    <h2>My academic story</h2>
-    <p>I am Muhammad Umair, a Computer Engineering student at UET Faisalabad. I come from Jura Sakesar, District Sargodha, and my journey reflects change, persistence, and self-discovery.</p>
-    <p>I began with Biology in school, but over time I realized that my real interest was in technology, logic, and problem solving. That realization changed the direction of my studies and eventually led me to engineering.</p>
+    <h2>My personal story</h2>
+    <p>I am Muhammad Umair, a student and learner who believes in growth through consistency, self-improvement, and reflection. I come from Jura Sakesar, District Sargodha, and this portfolio represents my progress, ideas, and written articles.</p>
+    <p>This website is not only a personal introduction. It is also a space where I can keep publishing new articles over time, making it a living portfolio instead of a fixed one-time project.</p>
   </article>
 
   <article class="detail-card">
     <p class="eyebrow">Education</p>
-    <h2>From matric to university</h2>
+    <h2>Academic foundation</h2>
     <ul>
       <li>Matriculation from Dar-e-Arqam Model High School Bhalwal with 871/1100</li>
       <li>Intermediate in ICS (Physics) from Punjab College Bhalwal with 899/1200</li>
@@ -24,7 +24,7 @@ subtitle: "Who I am and what drives me"
 
   <article class="detail-card">
     <p class="eyebrow">Mindset</p>
-    <h2>What I believe in</h2>
+    <h2>What guides me</h2>
     <ul>
       <li>Adaptability is important when goals become clearer over time</li>
       <li>Hard work matters most when results are not perfect yet</li>
@@ -35,7 +35,7 @@ subtitle: "Who I am and what drives me"
 
 <section class="page-panel" style="margin-top: 1rem;">
   <p class="eyebrow">Current Growth</p>
-  <h2>Skills I am developing</h2>
+  <h2>Areas I am developing</h2>
   <div class="spotlight-grid">
     <article class="spotlight-card">
       <h3>Programming</h3>

@@ -1,5 +1,5 @@
 ---
 layout: blog
-title: Journey Blog
-subtitle: "My experiences, lessons, and milestones"
+title: Articles
+subtitle: "Posts, updates, and personal writing"
 ---

@@ -7,72 +7,84 @@ page_class: home-page
 <section class="hero-grid">
   <div class="hero-card hero-intro">
     <div>
-      <p class="eyebrow">Computer Engineering Portfolio</p>
+      <p class="eyebrow">Personal Portfolio</p>
       <h1>Muhammad<br>Umair</h1>
-      <p class="lead">I am a Computer Engineering student at UET Faisalabad, building my future through discipline, curiosity, and steady growth. This portfolio presents my academic journey, university experiences, and the lessons that shaped me into a more focused learner.</p>
+      <p class="lead">Welcome to my personal portfolio. This website is a place where I share who I am, what I am learning, and the articles I continue publishing over time. It is designed so I can keep adding new posts easily without changing the whole website structure.</p>
       <div class="button-row">
-        <a class="button-link primary" href="/blog/">Read My Journey</a>
-        <a class="button-link secondary" href="/about/">About Me</a>
+        <a class="button-link primary" href="{{ "/blog/" | relative_url }}">Read Articles</a>
+        <a class="button-link secondary" href="{{ "/about/" | relative_url }}">About Me</a>
       </div>
     </div>
 
     <div class="fact-grid">
       <div class="detail-card">
+        <span class="fact-number">{{ site.posts | size }}</span>
+        <span class="fact-label">Published articles currently available on this portfolio</span>
+      </div>
+      <div class="detail-card">
         <span class="fact-number">2.94</span>
         <span class="fact-label">First semester GPA and a strong motivation to improve</span>
       </div>
       <div class="detail-card">
-        <span class="fact-number">13</span>
-        <span class="fact-label">Portfolio posts documenting my journey and experiences</span>
-      </div>
-      <div class="detail-card">
         <span class="fact-number">UET</span>
-        <span class="fact-label">Computer Engineering student at Faisalabad campus</span>
+        <span class="fact-label">Currently studying Computer Engineering at UET Faisalabad</span>
       </div>
       <div class="detail-card">
-        <span class="fact-number">ICS</span>
-        <span class="fact-label">A major academic shift from Biology toward technology</span>
+        <span class="fact-number">Growth</span>
+        <span class="fact-label">Focused on learning, consistency, and documenting progress</span>
       </div>
     </div>
   </div>
 
   <div class="hero-side">
     <div class="spotlight-card">
-      <p class="eyebrow">Quick Profile</p>
-      <h2>Focused on growth, coding, and real progress</h2>
+      <p class="eyebrow">Profile</p>
+      <h2>A portfolio built for continuous updates</h2>
       <div class="mini-list">
-        <div><strong>Current Study:</strong> Second semester of Computer Engineering</div>
-        <div><strong>Location:</strong> UET Faisalabad, Pakistan</div>
-        <div><strong>Interests:</strong> Programming, databases, machine learning, and problem solving</div>
+        <div><strong>Name:</strong> Muhammad Umair</div>
+        <div><strong>Current Focus:</strong> Learning, writing, and improving technical skills</div>
+        <div><strong>Use of This Site:</strong> Personal introduction, article archive, and portfolio showcase</div>
       </div>
     </div>
 
     <div class="spotlight-card">
-      <p class="eyebrow">Portfolio Direction</p>
-      <h2>A professional record of my academic journey</h2>
-      <p>This homepage keeps my fixed personal information visible, while the Journey page opens all blog posts separately in full detail, exactly as required for my portfolio structure.</p>
+      <p class="eyebrow">Website Format</p>
+      <h2>Simple structure for adding more articles</h2>
+      <p>This site uses Jekyll posts. Whenever I add a new markdown file inside <code>_posts</code>, it automatically appears on the articles page and updates the article count here on the homepage.</p>
     </div>
   </div>
 </section>
 
-<section class="page-panel" style="margin-top: 1rem;">
-  <p class="eyebrow">Journey Highlights</p>
-  <h2>From uncertainty to engineering</h2>
-  <div class="timeline-strip">
-    <article class="timeline-card">
-      <span>Early Direction</span>
-      <h3>Biology to Computer Science</h3>
-      <p>My path changed after matriculation, when I discovered a stronger interest in technology and decided to move toward ICS.</p>
+<section class="page-panel section-block">
+  <p class="eyebrow">Latest Articles</p>
+  <h2>Most recent posts</h2>
+  <div class="post-list">
+    {% for post in site.posts limit: 3 %}
+    <article class="post-card">
+      <p class="post-card-meta">{{ post.date | date: site.date_format }}</p>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+      <a class="text-link" href="{{ post.url | relative_url }}">Read full article</a>
     </article>
-    <article class="timeline-card">
-      <span>Major Turning Point</span>
-      <h3>Admission to UET Faisalabad</h3>
-      <p>Through entry tests, uncertainty, and difficult choices, I reached the university that opened this new chapter in my life.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="page-panel section-block">
+  <p class="eyebrow">Article Format</p>
+  <h2>How to add a new article</h2>
+  <div class="spotlight-grid">
+    <article class="spotlight-card">
+      <h3>1. Copy the template</h3>
+      <p>Use the file <code>article-template.md.example</code> as your starting format for each new post.</p>
     </article>
-    <article class="timeline-card">
-      <span>Current Focus</span>
-      <h3>Building technical confidence</h3>
-      <p>Programming, databases, and hands-on learning are helping me shape a stronger future in Computer Engineering.</p>
+    <article class="spotlight-card">
+      <h3>2. Save it in `_posts`</h3>
+      <p>Rename it using the Jekyll format: <code>YYYY-MM-DD-title.md</code>, then place it inside the <code>_posts</code> folder.</p>
+    </article>
+    <article class="spotlight-card">
+      <h3>3. Publish automatically</h3>
+      <p>After pushing to GitHub, the new article will appear automatically in the Articles page and the homepage count will update by itself.</p>
     </article>
   </div>
 </section>

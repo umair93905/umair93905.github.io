@@ -133,6 +133,9 @@ header nav, footer nav
   backdrop-filter: blur(16px)
   box-shadow: var(--shadow)
 
+.section-block
+  margin-top: 1rem
+
 .page-heading
   margin-bottom: 1.5rem
   h1
@@ -239,6 +242,22 @@ header nav, footer nav
   grid-template-columns: repeat(3, minmax(0, 1fr))
   gap: 1rem
   margin-top: 1rem
+
+.blog-summary-card
+  display: flex
+  flex-wrap: wrap
+  gap: .7rem 1rem
+  align-items: center
+  margin-top: .5rem
+  padding: 1rem 1.2rem
+  background: rgba(21, 94, 99, 0.08)
+  border: 1px solid var(--line)
+  border-radius: 20px
+  strong
+    font-family: "Space Grotesk", sans-serif
+    font-size: 1.2rem
+  span
+    color: var(--muted)
 
 .timeline-strip
   display: grid

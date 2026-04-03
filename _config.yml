@@ -1,6 +1,6 @@
 title: "Muhammad Umair"
 author: "Muhammad Umair"
-description: "Computer Engineering journey portfolio"
+description: "Personal portfolio and article collection"
 permalink: /blog/:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -21,7 +21,7 @@ navigation:
   - {file: "index.md", title: "Home", sidebaricon: home}
   - {file: "about.md", title: "About", sidebaricon: user}
   - {file: "contact.md", title: "Contact", sidebaricon: envelope}
-  - {file: "blog.md", title: "Journey", sidebaricon: book-open}
+  - {file: "blog.md", title: "Articles", sidebaricon: book-open}
   
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:2025bscpe134@gmail.com"}

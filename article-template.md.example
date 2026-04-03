@@ -1,0 +1,26 @@
+# Copy this file into `_posts/` and rename it like:
+# 2026-04-03-my-new-article.md
+
+---
+layout: post
+title: "My New Article Title"
+description: "Write a short summary here. This text will appear on the homepage and the Articles page."
+---
+
+Write your full article here.
+
+You can use normal Markdown, for example:
+
+## Section Heading
+
+This is a paragraph of your article.
+
+- Point one
+- Point two
+- Point three
+
+When you push the new file to GitHub, it will automatically:
+
+- appear in the Articles page
+- appear in the latest articles section on the homepage
+- increase the article count on the homepage
