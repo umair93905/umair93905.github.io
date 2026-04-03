@@ -9,8 +9,7 @@ layout: default
   </header>
 
   <div class="post-list">
-    {% assign ordered_posts = site.posts | reverse %}
-    {% for post in ordered_posts %}
+    {% for post in site.posts reversed %}
     <article class="post-card">
       <p class="post-card-meta">{{ post.date | date: site.date_format }}</p>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
