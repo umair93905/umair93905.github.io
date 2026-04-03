@@ -26,7 +26,3 @@ subtitle: "How to connect with me"
     <p>Based in Pakistan and continuing to grow through study, writing, and practical learning.</p>
   </article>
 </section>
-
-<div class="contact-note">
-  This portfolio is designed to keep growing over time, so new articles and new experiences can continue to be added in one organized place.
-</div>
