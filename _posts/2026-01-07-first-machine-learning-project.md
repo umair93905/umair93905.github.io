@@ -1,6 +1,11 @@
 ---
 layout: post
 title: "My First Machine Learning Project"
+tags:
+  - Projects
+  - Programming
+  - Learning
+  - Practical Work
 ---
 
 After completing my midterm exams, our instructor assigned us a machine learning project, which was a completely new and exciting experience for me. The title of our project was "Cardiovascular Disease Prediction Using Machine Learning." I worked on this project with my classmate Asim Raza, and together we put in a lot of effort to complete it successfully.
