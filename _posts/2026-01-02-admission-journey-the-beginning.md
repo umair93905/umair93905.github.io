@@ -1,11 +1,6 @@
 ---
 layout: post
 title: "My Admission Journey: The Beginning"
-tags:
-  - Admissions
-  - Beginnings
-  - Decisions
-  - Motivation
 ---
 
 After completing my intermediate education, I entered one of the most important phases of my life: deciding my future career and university path. At that time, I did not have a clear idea about which specific field I wanted to pursue, but I was determined to continue my education in a professional field.

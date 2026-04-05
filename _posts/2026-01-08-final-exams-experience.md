@@ -1,11 +1,6 @@
 ---
 layout: post
 title: "My Final Exams Experience"
-tags:
-  - Finals
-  - Learning
-  - Growth
-  - Mindset
 ---
 
 After my midterm experience, I was determined to improve my performance in the final exams. I realized that I had made mistakes in my preparation earlier, and this time, I wanted to correct them. Seeing my midterm results motivated me to work harder and stay focused.
