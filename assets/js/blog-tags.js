@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var visibleCount = 0;
 
     postCards.forEach(function (card) {
-      var tagList = (card.getAttribute("data-post-tags") || "").split(/\s+/).filter(Boolean);
+      var tagList = (card.getAttribute("data-post-tags") || "").split("|").filter(Boolean);
       var isVisible = tag === "all" || tagList.indexOf(tag) !== -1;
       card.hidden = !isVisible;
       if (isVisible) {
