@@ -5,6 +5,8 @@
 layout: post
 title: "My New Article Title"
 description: "Write a short summary here. This text will appear on the homepage and the Articles page."
+tags:
+  - Your Main Tag
 ---
 
 Write your full article here.

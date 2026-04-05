@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "My First Programming Lab Experience"
+tags:
+  - Programming
+  - Lab
 ---
 
 After attending a few classes, I had my first Programming Fundamentals lab, which was a very important experience for me. Since I was a Computer Engineering student, I quickly realized that programming would be one of the most important subjects in my field.

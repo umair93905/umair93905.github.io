@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "My Hostel Life Experience"
+tags:
+  - Hostel
+  - University Life
 ---
 
 After spending some time at the university, I gradually became familiar with both academic and hostel life. Once my first semester passed, I had gained a proper understanding of how hostel life works. Initially, it was very challenging, but with time, it became one of the most memorable parts of my university experience.

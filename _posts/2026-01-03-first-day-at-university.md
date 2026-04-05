@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "My First Day at University"
+tags:
+  - University Life
 ---
 
 The day finally came when I had to leave my home and move to the university. It was an emotional moment because it was the first time I was going to live away from my family. With my belongings packed, I started my journey toward UET Faisalabad.
