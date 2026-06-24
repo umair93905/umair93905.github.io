@@ -8,16 +8,13 @@ layout: default
     <h1>{{ page.title }}</h1>
   </header>
 
-  {% assign sorted_tags = site.tags | sort %}
-  {% if sorted_tags.size > 0 %}
+  {% assign blog_categories = "Introduction|University Life|Technical Learning" | split: "|" %}
   <div class="tag-filter-panel" aria-label="Article categories">
     <button class="tag-chip is-active" type="button" data-tag-filter="all">All</button>
-    {% for tag in sorted_tags %}
-      {% assign tag_name = tag[0] %}
-      <button class="tag-chip" type="button" data-tag-filter="{{ tag_name | slugify }}">{{ tag_name }}</button>
+    {% for category in blog_categories %}
+      <button class="tag-chip" type="button" data-tag-filter="{{ category | slugify }}">{{ category }}</button>
     {% endfor %}
   </div>
-  {% endif %}
 
   <div class="post-list">
     {% for post in site.posts reversed %}

@@ -2,7 +2,6 @@
 layout: post
 title: "My Hostel Life Experience"
 tags:
-  - Hostel
   - University Life
 ---
 

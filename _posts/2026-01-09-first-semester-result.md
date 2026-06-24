@@ -2,7 +2,7 @@
 layout: post
 title: "My First Semester Result"
 tags:
-  - Result
+  - University Life
 ---
 
 After the final exams, the next phase was waiting for the result. I was very anxious because I knew that my performance in the midterms, especially in Discrete Mathematics, had not been good. Even though I had improved in the finals, I was still worried about the overall outcome.

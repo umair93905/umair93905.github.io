@@ -2,7 +2,6 @@
 layout: post
 title: "Challenges of the Semester System"
 tags:
-  - Semester System
   - University Life
 ---
 

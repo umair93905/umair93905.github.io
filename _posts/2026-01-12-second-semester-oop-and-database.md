@@ -2,9 +2,7 @@
 layout: post
 title: "My Second Semester: OOP and Database Management"
 tags:
-  - Second Semester
-  - Database
-  - Programming
+  - Technical Learning
 ---
 
 Along with OOP, another important subject in my second semester was Database Management. This subject introduced me to the world of data handling and management, which is a key part of modern software systems.
