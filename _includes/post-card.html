@@ -2,7 +2,7 @@
 {% assign card_image = include.post.image | default: post_image_data.image %}
 {% assign card_image_alt = include.post.image_alt | default: post_image_data.alt | default: include.post.title %}
 
-<article class="post-card">
+<article class="post-card" data-post-tags="{% if include.post.tags %}{% for tag in include.post.tags %}{{ tag | escape }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endif %}">
   {% if card_image %}
     {% if card_image contains '://' %}
       {% assign card_image_url = card_image %}

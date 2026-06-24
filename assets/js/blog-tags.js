@@ -1,17 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var filterButtons = Array.prototype.slice.call(document.querySelectorAll("[data-tag-filter]"));
+  var categoryCards = Array.prototype.slice.call(document.querySelectorAll("[data-category-filter]"));
   var postCards = Array.prototype.slice.call(document.querySelectorAll("[data-post-tags]"));
+  var categoryTitle = document.querySelector("[data-category-title]");
   var emptyState = document.querySelector(".tag-filter-empty");
 
-  if (!filterButtons.length || !postCards.length) {
+  if (!categoryCards.length || !postCards.length) {
     return;
   }
 
-  function setActiveButton(activeTag) {
-    filterButtons.forEach(function (button) {
-      var isActive = button.getAttribute("data-tag-filter") === activeTag;
-      button.classList.toggle("is-active", isActive);
-      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+  function setActiveCategory(activeTag) {
+    categoryCards.forEach(function (card) {
+      var isActive = card.getAttribute("data-category-filter") === activeTag;
+      card.classList.toggle("is-active", isActive);
+      if (isActive) {
+        card.setAttribute("aria-current", "true");
+      } else {
+        card.removeAttribute("aria-current");
+      }
     });
   }
 
@@ -31,23 +36,34 @@ document.addEventListener("DOMContentLoaded", function () {
       emptyState.hidden = visibleCount !== 0;
     }
 
-    setActiveButton(tag);
+    if (categoryTitle) {
+      categoryTitle.textContent = tag;
+    }
 
-    if (window.location.hash !== "#" + tag) {
-      history.replaceState(null, "", tag === "all" ? window.location.pathname : "#" + tag);
+    setActiveCategory(tag);
+
+    var activeCard = categoryCards.find(function (card) {
+      return card.getAttribute("data-category-filter") === tag;
+    });
+    var activeHash = activeCard ? activeCard.getAttribute("href") : "";
+
+    if (activeHash && window.location.hash !== activeHash) {
+      history.replaceState(null, "", activeHash);
     }
   }
 
-  filterButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      filterPosts(button.getAttribute("data-tag-filter"));
+  categoryCards.forEach(function (card) {
+    card.addEventListener("click", function (event) {
+      event.preventDefault();
+      filterPosts(card.getAttribute("data-category-filter"));
     });
   });
 
-  var initialTag = window.location.hash ? window.location.hash.slice(1) : "all";
-  var validTag = filterButtons.some(function (button) {
-    return button.getAttribute("data-tag-filter") === initialTag;
-  }) ? initialTag : "all";
+  var initialCard = categoryCards.find(function (card) {
+    return card.getAttribute("href") === window.location.hash;
+  });
+  var firstCategory = categoryCards[0].getAttribute("data-category-filter");
+  var initialTag = initialCard ? initialCard.getAttribute("data-category-filter") : firstCategory;
 
-  filterPosts(validTag);
+  filterPosts(initialTag);
 });

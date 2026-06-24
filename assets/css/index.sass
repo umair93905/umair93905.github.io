@@ -291,20 +291,22 @@ header nav, footer nav
   display: grid
   gap: 1.4rem
 
-.blog-category
+.category-card-grid
   display: grid
+  grid-template-columns: repeat(3, minmax(0, 1fr))
   gap: 1rem
-  &:not(:last-child)
-    padding-bottom: 1.4rem
-    border-bottom: 1px solid var(--line)
 
-.category-hero
+.category-card
   position: relative
-  min-height: 14rem
+  min-height: 12rem
   overflow: hidden
   border: 1px solid var(--line)
   border-radius: 28px
   background: var(--accent)
+  color: #fff7f2
+  box-shadow: none
+  text-decoration: none
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease
   img
     position: absolute
     inset: 0
@@ -316,26 +318,48 @@ header nav, footer nav
     content: ""
     position: absolute
     inset: 0
-    background: linear-gradient(90deg, rgba(18, 23, 22, 0.76), rgba(18, 23, 22, 0.22))
+    background: linear-gradient(180deg, rgba(18, 23, 22, 0.18), rgba(18, 23, 22, 0.78))
+  &:hover, &.is-active
+    transform: translateY(-2px)
+    border-color: rgba(21, 94, 99, 0.55)
+    box-shadow: 0 18px 36px rgba(38, 22, 14, 0.14)
 
-.category-hero-copy
+.category-card-copy
   position: relative
   z-index: 1
-  min-height: 14rem
+  min-height: 12rem
   display: flex
   flex-direction: column
   justify-content: flex-end
-  padding: clamp(1.2rem, 4vw, 2rem)
-  color: #fff7f2
-  h2
+  padding: 1.2rem
+  strong
+    font-family: "Space Grotesk", sans-serif
     margin: 0
-    font-size: clamp(2rem, 5vw, 3.6rem)
+    font-size: clamp(1.35rem, 3vw, 2rem)
     line-height: 1
   .eyebrow
     color: rgba(255, 247, 242, 0.78)
 
+.category-results
+  display: grid
+  gap: 1rem
+  padding-top: .4rem
+
+.category-results-heading
+  h2
+    margin: 0
+    font-size: clamp(1.8rem, 4vw, 2.8rem)
+
 .category-post-list
   margin-top: 0
+
+.tag-filter-empty
+  margin: 0
+  padding: 1rem 1.2rem
+  background: rgba(255, 251, 245, 0.74)
+  border: 1px solid var(--line)
+  border-radius: 18px
+  color: var(--muted)
 
 .post-card
   padding: 0
@@ -433,7 +457,7 @@ header nav, footer nav
     color: var(--muted)
 
 @media (max-width: 980px)
-  .hero-grid, .spotlight-grid, .details-grid, .contact-grid, .timeline-strip, .post-list
+  .hero-grid, .spotlight-grid, .details-grid, .contact-grid, .timeline-strip, .post-list, .category-card-grid
     grid-template-columns: 1fr
 
 @media (max-width: 760px)

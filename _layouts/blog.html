@@ -10,27 +10,36 @@ layout: default
 
   {% assign category_data = "Introduction::https://images.pexels.com/photos/33327129/pexels-photo-33327129.jpeg?auto=compress&cs=tinysrgb&w=1600::A student walking across a university campus|1st Semester::https://images.pexels.com/photos/8423405/pexels-photo-8423405.jpeg?auto=compress&cs=tinysrgb&w=1600::Students studying together in a classroom|2nd Semester::https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1600::Programming code open on a laptop" | split: "|" %}
 
-  {% for category_item in category_data %}
-    {% assign category_parts = category_item | split: "::" %}
-    {% assign category_name = category_parts[0] %}
-    {% assign category_image = category_parts[1] %}
-    {% assign category_alt = category_parts[2] %}
-    <section class="blog-category" id="{{ category_name | slugify }}">
-      <div class="category-hero">
+  <div class="category-card-grid" aria-label="Blog categories">
+    {% for category_item in category_data %}
+      {% assign category_parts = category_item | split: "::" %}
+      {% assign category_name = category_parts[0] %}
+      {% assign category_image = category_parts[1] %}
+      {% assign category_alt = category_parts[2] %}
+      <a class="category-card{% if forloop.first %} is-active{% endif %}" href="#{{ category_name | slugify }}" data-category-filter="{{ category_name }}"{% if forloop.first %} aria-current="true"{% endif %}>
         <img src="{{ category_image }}" alt="{{ category_alt }}" loading="lazy" decoding="async">
-        <div class="category-hero-copy">
-          <p class="eyebrow">Category</p>
-          <h2>{{ category_name }}</h2>
-        </div>
-      </div>
+        <span class="category-card-copy">
+          <span class="eyebrow">Category</span>
+          <strong>{{ category_name }}</strong>
+        </span>
+      </a>
+    {% endfor %}
+  </div>
 
-      <div class="post-list category-post-list">
-        {% for post in site.posts reversed %}
-          {% if post.tags contains category_name %}
-            {% include post-card.html post=post %}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </section>
-  {% endfor %}
+  <section class="category-results" aria-live="polite">
+    <header class="category-results-heading">
+      <p class="eyebrow">Articles</p>
+      <h2 data-category-title>Introduction</h2>
+    </header>
+
+    <div class="post-list category-post-list">
+      {% for post in site.posts reversed %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </div>
+
+    <p class="tag-filter-empty" hidden>No articles found in this category.</p>
+  </section>
 </section>
+
+<script defer src="{{ "/assets/js/blog-tags.js" | relative_url }}"></script>
