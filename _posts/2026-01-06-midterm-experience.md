@@ -2,7 +2,7 @@
 layout: post
 title: "My Midterm Experience"
 tags:
-  - University Life
+  - 1st Semester
 ---
 
 After attending classes for a few weeks, it felt like everything was going smoothly. However, very soon, I was introduced to the reality of the semester system when my midterm exams were announced. It all happened so quickly that I felt unprepared and stressed. Since I had never experienced a semester system before, it was difficult for me to adjust to such a fast academic pace.

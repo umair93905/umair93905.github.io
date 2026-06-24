@@ -2,7 +2,7 @@
 layout: post
 title: "Challenges of the Semester System"
 tags:
-  - University Life
+  - 2nd Semester
 ---
 
 Transitioning from college to university introduced me to a completely new system: the semester system. Unlike the annual system, the semester system is fast-paced and requires consistent effort throughout the term.

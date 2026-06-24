@@ -2,7 +2,7 @@
 layout: post
 title: "My First Class"
 tags:
-  - University Life
+  - 1st Semester
 ---
 
 My first day of classes was filled with nervousness and excitement. As I entered the classroom, I saw many students already sitting there. Just like me, they were also new and seemed a bit nervous. Seeing unfamiliar faces made me realize that we were all starting a new journey together.
