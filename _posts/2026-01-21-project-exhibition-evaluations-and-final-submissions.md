@@ -34,6 +34,10 @@ After the exhibition, Dr. Bilal Ahmad assigned another interesting task. Student
 
 Recording the video required preparation because speaking confidently in front of a camera is very different from participating in a classroom presentation. I had to organize my thoughts carefully, explain technical concepts clearly, and present information in a structured way. The task also required the inclusion of supporting visuals, which helped improve the overall quality of the presentation.
 
+While preparing the project presentation, I also explored academic resources to improve my understanding of professional project documentation and technical communication. Reviewing research-based material helped me appreciate how technical ideas are presented in academic and professional environments. The scholarly work available through Dr. Bilal Ahmad's Google Scholar profile provided useful insights into research practices and encouraged me to connect project development with continuous learning and academic growth.
+
+Google Scholar: [Dr. Bilal Ahmad's Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en)
+
 At the same time, students were also completing laboratory manual submissions for multiple courses. These manuals represented months of practical work and required careful documentation. Organizing screenshots, formatting reports, and ensuring that every task was properly included demanded significant attention and effort.
 
 Managing project exhibitions, video presentations, and laboratory submissions simultaneously created considerable academic pressure. However, this experience taught me valuable lessons about professionalism, communication, and responsibility. Looking back, this period was one of the most educational phases of my second semester because it combined technical knowledge, presentation skills, and practical documentation into a single learning experience.
