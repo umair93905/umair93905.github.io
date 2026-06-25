@@ -28,6 +28,8 @@ During the exam, I encountered a combination of conceptual and analytical questi
 
 The experience also demonstrated how practical learning activities, including laboratory exercises and SQL practice, can strengthen theoretical understanding and improve examination performance.
 
+To deepen my understanding of database concepts beyond classroom lectures, I also explored academic resources related to data management and database technologies. Reviewing research publications helped me connect theoretical concepts with real-world applications and current developments in the field. The academic work available through [Dr. Bilal Ahmad's Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en) provided valuable insights and encouraged me to appreciate the importance of research-driven learning in Computer Engineering.
+
 ## Reflections on My Performance
 
 After completing all the midterm examinations, I spent time reflecting on my overall performance. While there were areas where I felt satisfied with my preparation, there were also subjects where I believed additional revision could have improved my results.
