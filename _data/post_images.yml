@@ -8,6 +8,11 @@ admission-journey-the-beginning:
   alt: "Two university students walking beside an academic building"
   source: "https://www.pexels.com/photo/students-walking-by-an-university-building-7972502/"
 
+why-i-am-creating-this-github-portfolio:
+  image: "https://images.pexels.com/photos/5483075/pexels-photo-5483075.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Hands typing code on a laptop during a portfolio work session"
+  source: "https://www.pexels.com/photo/coding-on-a-laptop-5483075/"
+
 first-day-at-university:
   image: "https://images.pexels.com/photos/7972512/pexels-photo-7972512.jpeg?auto=compress&cs=tinysrgb&w=1600"
   alt: "Students walking into a university campus through an archway"
@@ -32,6 +37,11 @@ first-machine-learning-project:
   image: "https://images.pexels.com/photos/7947996/pexels-photo-7947996.jpeg?auto=compress&cs=tinysrgb&w=1600"
   alt: "Laptop screen showing charts and data analysis"
   source: "https://www.pexels.com/photo/charts-on-a-laptop-7947996/"
+
+my-experience-of-learning-programming-fundamentals:
+  image: "https://images.pexels.com/photos/5483075/pexels-photo-5483075.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A laptop open for beginner programming practice"
+  source: "https://www.pexels.com/photo/coding-on-a-laptop-5483075/"
 
 final-exams-experience:
   image: "https://images.pexels.com/photos/6684209/pexels-photo-6684209.jpeg?auto=compress&cs=tinysrgb&w=1600"
@@ -62,3 +72,38 @@ challenges-of-the-semester-system:
   image: "https://images.pexels.com/photos/31875851/pexels-photo-31875851.jpeg?auto=compress&cs=tinysrgb&w=1600"
   alt: "A focused student taking a classroom test"
   source: "https://www.pexels.com/photo/focused-student-taking-test-in-classroom-31875851/"
+
+from-classroom-to-screen-my-learning-experience-during-the-iran-israel-conflict:
+  image: "https://images.pexels.com/photos/7988114/pexels-photo-7988114.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A student using a laptop for online learning"
+  source: "https://www.pexels.com/photo/a-person-using-laptop-7988114/"
+
+my-first-github-portfolio-journey-learning-challenges-and-appreciation:
+  image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Programming code on a laptop during portfolio development"
+  source: "https://www.pexels.com/photo/code-coding-computer-data-574071/"
+
+my-midterm-examinations-balancing-preparation-and-performance:
+  image: "https://images.pexels.com/photos/6684150/pexels-photo-6684150.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Students preparing for an examination in a classroom"
+  source: "https://www.pexels.com/photo/students-taking-exam-inside-the-classroom-6684150/"
+
+projects-and-assignments-the-most-demanding-phase-of-the-semester:
+  image: "https://images.pexels.com/photos/7947996/pexels-photo-7947996.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Laptop screen showing a technical project in progress"
+  source: "https://www.pexels.com/photo/charts-on-a-laptop-7947996/"
+
+balancing-eid-holidays-and-project-deadlines-my-journey-from-library-system-to-traffic-racer-game:
+  image: "https://images.pexels.com/photos/7988114/pexels-photo-7988114.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A laptop used for project work during a busy schedule"
+  source: "https://www.pexels.com/photo/a-person-using-laptop-7988114/"
+
+project-exhibition-evaluations-and-final-submissions:
+  image: "https://images.pexels.com/photos/8423405/pexels-photo-8423405.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "Students gathered in a classroom for presentations and evaluation"
+  source: "https://www.pexels.com/photo/students-on-a-classroom-8423405/"
+
+my-second-semester-final-examinations-a-lesson-in-time-management:
+  image: "https://images.pexels.com/photos/6684209/pexels-photo-6684209.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  alt: "A student writing answers during final examinations"
+  source: "https://www.pexels.com/photo/a-person-taking-an-exam-6684209/"

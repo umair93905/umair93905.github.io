@@ -21,6 +21,13 @@ layout: default
         <span class="category-card-copy">
           <span class="eyebrow">Category</span>
           <strong>{{ category_name }}</strong>
+          {% assign category_count = 0 %}
+          {% for post in site.posts %}
+            {% if post.tags contains category_name %}
+              {% assign category_count = category_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          <span class="category-card-count">{{ category_count }} article{% unless category_count == 1 %}s{% endunless %}</span>
         </span>
       </a>
     {% endfor %}
