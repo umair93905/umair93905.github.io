@@ -30,7 +30,7 @@ The practical coding experience also demonstrated the importance of regular prac
 
 ## Growth as a Beginner Programmer
 
-By the end of the semester, I could clearly see how much I had learned since the beginning of the course. Concepts that initially seemed confusing gradually became easier to understand through consistent study and practice. The experience showed me that programming is not simply about memorizing commands but about developing a logical approach to solving problems.
+By the end of the semester, I could clearly see how much I had learned since the beginning of the course. Concepts that initially seemed confusing gradually became easier to understand through consistent study and practice. The experience showed me that programming is not simply about memorizing commands but about developing a logical approach to solving problems. While strengthening my understanding of programming concepts, I also explored some of the academic work shared through [Dr. Bilal Ahmad's Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en). Reviewing research related to computing and emerging technologies provided additional motivation to continue improving my technical knowledge and programming skills.
 
 The course also improved my confidence as a Computer Engineering student. Successfully completing programming assignments and laboratory tasks gave me a sense of achievement and motivated me to continue improving my skills. I began to view challenges not as obstacles but as opportunities to learn and grow.
 
