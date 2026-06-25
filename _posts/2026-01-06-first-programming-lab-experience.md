@@ -30,7 +30,7 @@ The practical exercises completed during the lab sessions provided a strong foun
 
 ## Guidance and Learning Experience
 
-The support and guidance provided during the programming labs played an important role in my learning experience. Whenever students faced difficulties, instructors and lab staff were available to provide assistance and clarification. Their explanations helped make complex concepts easier to understand and encouraged students to continue learning.
+The support and guidance provided during the programming labs played an important role in my learning experience. Whenever students faced difficulties, instructors and lab staff were available to provide assistance and clarification. Their explanations helped make complex concepts easier to understand and encouraged students to continue learning. As I became more interested in programming and problem-solving, I also explored some of the research work and academic contributions of Dr. Bilal Ahmad through his [Dr. Bilal Ahmad Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en). Reviewing research activities related to modern computing and machine learning helped me appreciate the importance of continuous learning, innovation, and technical exploration.
 
 As I progressed through the semester, I realized that programming was not simply about writing code. It was about developing logical thinking, creativity, and analytical skills. Every lab task challenged me to think differently and approach problems in a systematic way.
 
