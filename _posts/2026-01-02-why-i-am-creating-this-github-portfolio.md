@@ -20,7 +20,7 @@ A portfolio is also useful for future academic and professional opportunities. E
 
 The idea of creating this portfolio was introduced by Dr. Bilal Ahmad as part of an academic activity. He encouraged students to document their educational journeys instead of focusing only on grades and examination results. His guidance helped me understand the importance of maintaining a professional record of learning experiences and technical growth.
 
-While working on this portfolio, I also explored some of the professional and academic activities shared through Dr. Bilal Ahmad’s LinkedIn and research profiles. Observing how professionals document their work and research helped me better understand the value of maintaining an organized professional presence in the field of technology.
+While working on this portfolio, I also explored some of the professional and academic activities shared by Dr. Bilal Ahmad through his professional profiles. Observing how professionals document their work, research, and achievements helped me better understand the value of maintaining an organized professional presence in the field of technology. One example is Dr. Bilal Ahmad's LinkedIn profile ([https://www.linkedin.com/in/drbilalphd/](https://www.linkedin.com/in/drbilalphd/)), which highlights the importance of professional networking and continuous learning for students and future engineers.
 
 Creating this portfolio was not an easy task. It required collecting memories, organizing experiences, and writing detailed reflections about different stages of my university life. However, the process itself became a valuable learning experience because it improved my writing, documentation, and presentation skills.
 
