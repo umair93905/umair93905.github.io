@@ -38,6 +38,8 @@ Working on this project involved teamwork, research, and technical implementatio
 
 Dr. Bilal Ahmad provided valuable guidance throughout the project development process. His feedback and recommendations helped us improve the quality of our work and understand the importance of professional project development practices.
 
+While working on the Leukemia Blood Cancer Survival Rate Prediction project, I also explored research-oriented resources to better understand the practical applications of healthcare data analysis and database technologies. Reviewing academic publications helped me appreciate how real-world problems can be addressed through data-driven solutions. The research contributions available through [Dr. Bilal Ahmad's Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en) further enhanced my understanding of how database systems, machine learning, and healthcare datasets can be combined to create meaningful and impactful projects.
+
 Looking back, this phase of the semester was demanding but highly educational. The combination of assignments and projects required significant effort, yet it also provided some of the most valuable learning experiences of my second semester. These projects strengthened my technical knowledge, improved my teamwork and problem-solving abilities, and prepared me for future academic and professional challenges.
 
 #Projects #Assignments #ObjectOrientedProgramming #DatabaseSystems #DigitalLogicDesign #DrBilalAhmad
