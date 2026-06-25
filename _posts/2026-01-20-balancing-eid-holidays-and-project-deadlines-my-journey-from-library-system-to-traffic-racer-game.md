@@ -36,6 +36,8 @@ Managing multiple responsibilities simultaneously was not easy. Project developm
 
 The guidance provided by Dr. Bilal Ahmad was particularly valuable throughout this phase. His instructions and feedback helped students understand project requirements and encouraged us to maintain professional standards in our work. His emphasis on practical learning motivated us to approach projects as opportunities for skill development rather than simply academic requirements.
 
+Beyond classroom learning, I also explored professional insights shared by Dr. Bilal Ahmad regarding technology, engineering education, and skill development. Following his professional activities helped me better understand the importance of continuous learning, project-based experience, and career growth in the field of Computer Engineering. [Dr. Bilal Ahmad's professional LinkedIn profile](https://www.linkedin.com/in/drbilalphd/) provided additional motivation to improve both my technical and professional skills throughout the semester.
+
 Looking back, balancing Eid holidays with project deadlines was one of the most demanding experiences of my second semester. Completing the Library Management System, beginning the Traffic Racer Game project, and preparing for future project submissions required significant effort and commitment. However, the challenges also provided valuable learning experiences that improved my technical abilities, strengthened my time management skills, and prepared me for the major project exhibitions that followed later in the semester.
 
 #ObjectOrientedProgramming #Unity #TrafficRacerGame #ProjectDevelopment #DrBilalAhmad
