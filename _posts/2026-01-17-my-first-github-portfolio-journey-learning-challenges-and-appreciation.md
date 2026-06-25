@@ -32,12 +32,12 @@ Despite the difficulties, the experience was highly rewarding. Every challenge I
 
 After completing the portfolio, I felt a sense of accomplishment because I had successfully finished a task that initially seemed difficult. More importantly, I had learned several valuable skills throughout the process. The portfolio helped me improve my writing abilities, content organization skills, and understanding of professional online platforms.
 
-One of the most encouraging moments came when Dr. Bilal Ahmad reviewed the work and provided guidance regarding improvements and professional presentation standards. His feedback helped me understand the importance of quality, organization, and attention to detail. Rather than viewing the portfolio as just another academic task, I began to see it as a long-term professional asset that could continue to grow throughout my academic and professional career.
+One of the most encouraging moments came when Dr. Bilal Ahmad reviewed the work and provided guidance regarding improvements and professional presentation standards. His feedback helped me understand the importance of quality, organization, and attention to detail. Rather than viewing the portfolio as just another academic task, I began to see it as a long-term professional asset that could continue to grow throughout my academic and professional career. While working on this portfolio, I also explored [Dr. Bilal Ahmad's professional LinkedIn profile](https://www.linkedin.com/in/drbilalphd/) to better understand how educators and technology professionals present their achievements, experiences, and contributions online. This encouraged me to develop my own portfolio in a more organized and professional manner.
 
 The experience also taught me the importance of perseverance. There were many moments when the workload felt overwhelming, especially because the portfolio task was completed alongside regular coursework and other academic responsibilities. However, the effort invested in learning GitHub and preparing the portfolio ultimately proved worthwhile.
 
 Looking back, creating my first GitHub portfolio was one of the most valuable learning experiences of my second semester. It introduced me to professional portfolio development, improved my technical and documentation skills, and encouraged me to reflect on my academic journey. Most importantly, it showed me that learning extends beyond classrooms and examinations. The knowledge and experience gained through this task will continue to benefit me as I progress through my Computer Engineering studies and prepare for future professional opportunities.
 
-GitHub Portfolio: (Add Portfolio Repository Link Here)
+[umair93905/umair93905.github.io](https://github.com/umair93905/umair93905.github.io)
 
 #GitHub #Portfolio #ComputerEngineering #LearningJourney #DrBilalAhmad

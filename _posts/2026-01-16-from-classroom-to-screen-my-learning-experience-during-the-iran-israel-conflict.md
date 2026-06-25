@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "From Classroom to Screen: My Learning Experience During the Iran–Israel Conflict"
-description: "The second semester of my Computer Engineering journey included an unexpected event that affected the normal academic routine of students across the university. Due to the Iran–Israel conflict and the resulting security concerns, educational institutions temporarily shifted from physical classes to online learning. This sudden transition changed the way students attended lectures, completed assignments, and interacted with teachers. Although the situation created uncertainty, it also provided a unique opportunity to experience a different mode of education."
+title: "From Classroom to Screen: My Learning Experience During the Iran-Israel Conflict"
+description: "The second semester of my Computer Engineering journey included an unexpected event that affected the normal academic routine of students across the university. Due to the Iran-Israel conflict and the resulting security concerns, educational institutions temporarily shifted from physical classes to online learning. This sudden transition changed the way students attended lectures, completed assignments, and interacted with teachers. Although the situation created uncertainty, it also provided a unique opportunity to experience a different mode of education."
 tags:
   - 2nd Semester
 ---
 
-The second semester of my Computer Engineering journey included an unexpected event that affected the normal academic routine of students across the university. Due to the Iran–Israel conflict and the resulting security concerns, educational institutions temporarily shifted from physical classes to online learning. This sudden transition changed the way students attended lectures, completed assignments, and interacted with teachers. Although the situation created uncertainty, it also provided a unique opportunity to experience a different mode of education.
+The second semester of my Computer Engineering journey included an unexpected event that affected the normal academic routine of students across the university. Due to the Iran-Israel conflict and the resulting security concerns, educational institutions temporarily shifted from physical classes to online learning. This sudden transition changed the way students attended lectures, completed assignments, and interacted with teachers. Although the situation created uncertainty, it also provided a unique opportunity to experience a different mode of education.
 
 At first, the shift to online classes felt unusual because I had become accustomed to attending lectures and laboratory sessions on campus. However, as the days passed, both students and teachers adapted to the new circumstances. This period became an important learning experience that taught me flexibility, self-discipline, and the importance of staying academically active even during challenging situations.
 
@@ -24,11 +24,11 @@ The experience demonstrated how technology can support education during difficul
 
 One of the most important academic activities during this period involved Database Systems. Even though classes had moved online, laboratory work and course learning continued. Under the guidance of Dr. Bilal Ahmad, students were introduced to SQL and database-related concepts through online lectures and practical tasks.
 
-Learning SQL during online classes was both interesting and challenging. Since SQL is a practical language used for managing databases, understanding its commands required consistent practice. Through lectures and laboratory exercises, I learned how to create tables, insert records, retrieve information, and perform various database operations using SQL queries. To further strengthen my understanding of database technologies and academic research, I also explored some of the publications and research activities available through [Dr. Bilal Ahmad Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en). . Reviewing research work related to computing, databases, and information systems provided additional motivation to improve my technical knowledge and practical skills. This exposure helped me appreciate how academic research contributes to solving real-world technological challenges.
+Learning SQL during online classes was both interesting and challenging. Since SQL is a practical language used for managing databases, understanding its commands required consistent practice. Through lectures and laboratory exercises, I learned how to create tables, insert records, retrieve information, and perform various database operations using SQL queries.
 
 Completing lab tasks remotely required greater self-discipline because students had to manage their learning independently. Unlike physical laboratory sessions where immediate assistance was available, online learning encouraged students to explore solutions on their own before seeking help. This process improved my problem-solving skills and strengthened my confidence in handling technical tasks.
 
-The SQL exercises completed during this period provided valuable practical experience and helped me develop a stronger understanding of database management concepts. These skills later proved useful in database projects and advanced coursework.
+The SQL exercises completed during this period provided valuable practical experience and helped me develop a stronger understanding of database management concepts. These skills later proved useful in database projects and advanced coursework. To further enhance my understanding of database technologies and academic learning, I also explored some of the research publications available through [Dr. Bilal Ahmad's Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en). Reviewing academic work related to computing and technology helped me appreciate the connection between theoretical knowledge and practical implementation, while also motivating me to continue improving my technical skills.
 
 ## Adapting to a New Learning Environment
 
@@ -38,7 +38,7 @@ Another lesson involved self-motivation. In a traditional classroom environment,
 
 The situation also highlighted the value of effective communication. Teachers worked hard to provide guidance and support despite the physical distance, while students had to communicate more actively to seek clarification and complete academic tasks successfully. This collaborative effort helped ensure that learning continued despite the challenges created by the situation.
 
-Looking back, the temporary shift from classroom learning to online education during the Iran–Israel conflict was a unique and educational experience. It allowed me to continue my studies while developing adaptability, independence, and technical skills. The opportunity to learn SQL and complete laboratory tasks under the guidance of Dr. Bilal Ahmad made this period particularly valuable. Although the circumstances were unexpected, the experience demonstrated that learning can continue successfully when students and teachers are willing to adapt to changing conditions.
+Looking back, the temporary shift from classroom learning to online education during the Iran-Israel conflict was a unique and educational experience. It allowed me to continue my studies while developing adaptability, independence, and technical skills. The opportunity to learn SQL and complete laboratory tasks under the guidance of Dr. Bilal Ahmad made this period particularly valuable. Although the circumstances were unexpected, the experience demonstrated that learning can continue successfully when students and teachers are willing to adapt to changing conditions.
 
 #OnlineLearning
 #DatabaseSystems
