@@ -16,7 +16,7 @@ At the beginning of the project, I spent time learning the basic concepts of mac
 
 As I explored the subject further, I learned about datasets, features, target variables, training data, and prediction models. These concepts were initially unfamiliar, but gradually they became easier to understand through practice and experimentation.
 
-One of the most interesting aspects of machine learning was its wide range of applications. From healthcare and finance to transportation and cybersecurity, machine learning is being used in many industries to solve complex problems. Learning about these applications increased my interest in the field and motivated me to explore it further.
+One of the most interesting aspects of machine learning was its wide range of applications. From healthcare and finance to transportation and cybersecurity, machine learning is being used in many industries to solve complex problems. Learning about these applications increased my interest in the field and motivated me to explore it further. To gain a broader understanding of machine learning and current research trends, I also explored the research publications available through [Dr. Bilal Ahmad's Google Scholar profile](https://scholar.google.com.au/citations?user=8nZ0jVkAAAAJ&hl=en). Reviewing research work related to artificial intelligence and data-driven technologies helped me appreciate the practical impact of machine learning in modern computing.
 
 The project also helped me appreciate the importance of data. I realized that the quality of data plays a major role in determining the effectiveness of machine learning models. Without reliable data, even advanced algorithms cannot produce accurate results.
 
