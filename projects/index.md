@@ -43,7 +43,7 @@ page_class: projects-page
 
   <article class="project-card" data-project-card>
     <div class="project-media">
-      <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Academic library shelves in a university learning space" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="University campus building with open plaza" loading="lazy">
     </div>
     <div class="project-body">
       <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-details-admission">
