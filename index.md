@@ -8,6 +8,7 @@ page_class: home-page
   <div class="hero-card hero-intro">
     <div>
       <p class="eyebrow">Personal Portfolio</p>
+      <img src="/profile.jpg" alt="Muhammad Umair" class="profile-pic">
       <h1>Muhammad<br>Umair</h1>
       <p class="lead">Welcome to my personal portfolio. This home page shares my basic information, academic background, and future goals as a Computer Engineering student who is committed to learning and growth.</p>
       <div class="button-row">
