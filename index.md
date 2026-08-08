@@ -8,7 +8,7 @@ page_class: home-page
   <div class="hero-card hero-intro">
     <div>
       <p class="eyebrow">Personal Portfolio</p>
-     <img src="{{ '/profile.jpeg' | relative_url }}" alt="Muhammad Umair" class="profile-pic">
+   <img src="/profile.jpeg" alt="Muhammad Umair" class="profile-pic" style="width:100px;height:100px;border-radius:50%;object-fit:cover;border:3px solid #444;display:block;margin:0 0 1rem 0;">
       <h1>Muhammad<br>Umair</h1>
       <p class="lead">Welcome to my personal portfolio. This home page shares my basic information, academic background, and future goals as a Computer Engineering student who is committed to learning and growth.</p>
       <div class="button-row">
